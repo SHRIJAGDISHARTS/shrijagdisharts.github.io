@@ -103,6 +103,6 @@ grid-template-columns: repeat(4, 1fr) !important;
 #premium .gallery {
   grid-template-columns: repeat(3, 1fr) !important;
 }
-#gallery .photo img {
+#gallery .photo{
   object-fit: contain;
 }
