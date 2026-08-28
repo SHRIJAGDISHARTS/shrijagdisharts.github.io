@@ -107,7 +107,7 @@ grid-template-columns: repeat(4, 1fr) !important;
   object-fit: contain;
 }
 #gallery .photo img {
-  width: 60%;
+  width: 70%;
   margin: auto;
   display: block;
 }
