@@ -106,3 +106,8 @@ grid-template-columns: repeat(4, 1fr) !important;
 #gallery .photo{
   object-fit: contain;
 }
+#gallery .photo img {
+  width: 80%;
+  margin: auto;
+  display: block;
+}
