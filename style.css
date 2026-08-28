@@ -98,5 +98,5 @@
     cursor: zoom-in;
 }
 section#gallery .gallery {
-  grid-template-columns: repeat(4, 1fr);
+grid-template-columns: repeat(4, 1fr) !important;
 }
