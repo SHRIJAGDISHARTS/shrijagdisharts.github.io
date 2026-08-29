@@ -146,3 +146,23 @@ grid-template-columns: repeat(4, 1fr) !important;
     height: auto !important;
     object-fit: contain !important;
 }
+/* FIX PREMIUM GALLERY */
+#premium .gallery {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 16px !important;
+    width: 100% !important;
+}
+
+#premium .gallery .photo {
+    display: block !important;
+    width: 100% !important;
+    overflow: hidden !important;
+}
+
+#premium .gallery .photo img {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
+}
