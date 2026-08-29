@@ -233,3 +233,242 @@ grid-template-columns: repeat(4, 1fr) !important;
     grid-column: auto !important;
     grid-row: auto !important;
 }
+
+
+
+/* ===== MOBILE VIEW — SHRI JAGDISH ARTS ===== */
+@media (max-width: 800px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .header {
+    height: 68px;
+    padding: 0 5%;
+    gap: 10px;
+  }
+
+  .brand {
+    font-size: 11px;
+    gap: 7px;
+  }
+
+  .brand-mark {
+    font-size: 25px;
+  }
+
+  .brand small {
+    font-size: 7px;
+    margin-top: 4px;
+  }
+
+  .menu {
+    display: block;
+    font-size: 23px;
+  }
+
+  .header nav,
+  .wa-top {
+    display: none;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    min-height: auto;
+    padding: 55px 6% 65px;
+    text-align: left;
+  }
+
+  .hero h1 {
+    font-size: clamp(58px, 18vw, 78px);
+    line-height: .84;
+    margin: 16px 0 22px;
+  }
+
+  .lead {
+    font-size: 14px;
+    line-height: 1.65;
+  }
+
+  .buttons {
+    flex-wrap: wrap;
+    margin-top: 24px;
+  }
+
+  .buttons .btn {
+    min-width: 135px;
+    text-align: center;
+  }
+
+  .hero-art {
+    margin-top: 42px;
+  }
+
+  .print-card {
+    width: min(330px, 90vw);
+    height: 280px;
+    border-width: 7px;
+    box-shadow: 16px 16px 0 var(--yellow);
+  }
+
+  .ink {
+    font-size: 105px;
+  }
+
+  .section {
+    padding: 65px 5%;
+  }
+
+  .section-title h2,
+  .about h2,
+  .contact h2 {
+    font-size: clamp(40px, 12vw, 52px);
+    margin-bottom: 28px;
+  }
+
+  .section-title .muted {
+    font-size: 12px;
+    line-height: 1.6;
+  }
+
+  .cards {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .cards article {
+    padding: 20px 16px;
+    min-height: 185px;
+  }
+
+  .cards h3 {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+
+  .cards p {
+    font-size: 12px;
+    line-height: 1.55;
+  }
+
+  /* Regular + Premium galleries */
+  .gallery,
+  #premium .gallery {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 10px !important;
+    width: 100% !important;
+  }
+
+  .photo {
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  #gallery .photo img,
+  #premium .photo img {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100% !important;
+  }
+
+  /* Premium videos */
+  #premium .video-card {
+    width: 100% !important;
+  }
+
+  #premium .video-card video {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+
+  .about {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 65px 6%;
+  }
+
+  .about-mark {
+    font-size: 80px;
+    width: 180px;
+    padding: 25px 8px;
+    box-shadow: 10px 10px 0 var(--yellow);
+  }
+
+  .points {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    font-size: 12px;
+  }
+
+  .contact {
+    padding: 65px 6%;
+  }
+
+  .contact p {
+    font-size: 13px;
+  }
+
+  .contact .btn {
+    display: block;
+    width: min(100%, 330px);
+    margin: 12px auto;
+    line-height: 1.35;
+  }
+
+  .instagram {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 500px) {
+
+  .header {
+    padding: 0 4%;
+  }
+
+  .brand {
+    font-size: 10px;
+  }
+
+  .brand-mark {
+    font-size: 23px;
+  }
+
+  .hero {
+    padding: 48px 6% 58px;
+  }
+
+  .hero h1 {
+    font-size: 64px;
+  }
+
+  .print-card {
+    height: 245px;
+  }
+
+  .ink {
+    font-size: 88px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  /* Keep two columns for designs on small phones */
+  .gallery,
+  #premium .gallery {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 8px !important;
+  }
+
+  .section {
+    padding: 55px 5%;
+  }
+
+  .points {
+    grid-template-columns: 1fr;
+  }
+}
