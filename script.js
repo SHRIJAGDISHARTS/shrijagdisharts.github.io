@@ -10,3 +10,7 @@ nav.querySelectorAll('a').forEach(link => {
     nav.classList.remove('mobile-open');
   });
 });
+function toggleMobileMenu() {
+  const nav = document.querySelector('.header nav');
+  nav.classList.toggle('mobile-open');
+}
