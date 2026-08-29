@@ -563,3 +563,52 @@ grid-template-columns: repeat(4, 1fr) !important;
   background: #000 !important;
 }
 
+/* =========================================================
+   FINAL PREMIUM VIDEO FIX
+   ========================================================= */
+
+#premium .gallery > .video-card {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  aspect-ratio: auto !important;
+  overflow: hidden !important;
+  background: #000 !important;
+  align-self: start !important;
+}
+
+#premium .gallery > .video-card video {
+  display: block !important;
+  width: 100% !important;
+  height: auto !important;
+  max-width: 100% !important;
+  max-height: none !important;
+  object-fit: contain !important;
+  background: #000 !important;
+}
+
+@media (max-width: 800px) {
+  #premium .gallery > .video-card {
+    grid-column: 1 / -1 !important;
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: auto !important;
+  }
+
+  #premium .gallery > .video-card video {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100% !important;
+    max-height: none !important;
+    object-fit: contain !important;
+  }
+}
+
+@media (max-width: 500px) {
+  #premium .gallery > .video-card {
+    grid-column: 1 / -1 !important;
+  }
+}
