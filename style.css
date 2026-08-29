@@ -541,4 +541,25 @@ grid-template-columns: repeat(4, 1fr) !important;
     box-shadow: none;
   }
 }
+  /* ===== PREMIUM VIDEO FIX ===== */
+
+#premium .video-card {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  aspect-ratio: 16 / 9 !important;
+  height: auto !important;
+  overflow: hidden !important;
+  background: #000 !important;
+}
+
+#premium .video-card video {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  object-fit: contain !important;
+  background: #000 !important;
+}
 
