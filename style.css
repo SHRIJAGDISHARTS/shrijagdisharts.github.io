@@ -502,5 +502,43 @@ grid-template-columns: repeat(4, 1fr) !important;
     background: #171717;
     color: var(--yellow);
   }
+/* ===== PREMIUM GALLERY POLISH ===== */
+
+#premium .photo {
+  border: 1px solid rgba(255, 215, 0, 0.18);
+  border-radius: 6px;
+  background: #111;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Premium image/video hover */
+#premium .photo:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+  border-color: rgba(255, 215, 0, 0.5);
+}
+
+/* Keep images clean */
+#premium .photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Premium videos */
+#premium .photo video {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #000;
+}
+
+/* Don't zoom cards on mobile */
+@media (max-width: 800px) {
+  #premium .photo:hover {
+    transform: none;
+    box-shadow: none;
+  }
 }
 
