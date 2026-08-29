@@ -471,11 +471,11 @@ grid-template-columns: repeat(4, 1fr) !important;
   .points {
     grid-template-columns: 1fr;
   }
-  /* ===== MOBILE MENU ===== */
+
+
+/* ===== MOBILE MENU ===== */
 @media (max-width: 800px) {
-  .header {
-    position: sticky;
-  }
+  .header { position: sticky; }
 
   .header nav.mobile-open {
     display: flex !important;
@@ -502,8 +502,9 @@ grid-template-columns: repeat(4, 1fr) !important;
     background: #171717;
     color: var(--yellow);
   }
-/* ===== PREMIUM GALLERY POLISH ===== */
+}
 
+/* ===== PREMIUM GALLERY POLISH ===== */
 #premium .photo {
   border: 1px solid rgba(255, 215, 0, 0.18);
   border-radius: 6px;
@@ -511,63 +512,21 @@ grid-template-columns: repeat(4, 1fr) !important;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-/* Premium image/video hover */
 #premium .photo:hover {
   transform: translateY(-5px);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
   border-color: rgba(255, 215, 0, 0.5);
 }
 
-/* Keep images clean */
 #premium .photo img {
   display: block;
   width: 100%;
-  height: auto;
-  object-fit: contain;
-}
-
-/* Premium videos */
-#premium .photo video {
-  display: block;
-  width: 100%;
-  height: auto;
-  background: #000;
-}
-
-/* Don't zoom cards on mobile */
-@media (max-width: 800px) {
-  #premium .photo:hover {
-    transform: none;
-    box-shadow: none;
-  }
-}
-  /* ===== PREMIUM VIDEO FIX ===== */
-
-#premium .video-card {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  aspect-ratio: 16 / 9 !important;
   height: auto !important;
-  overflow: hidden !important;
-  background: #000 !important;
-}
-
-#premium .video-card video {
-  display: block !important;
-  width: 100% !important;
-  height: 100% !important;
-  max-width: 100% !important;
-  max-height: 100% !important;
   object-fit: contain !important;
-  background: #000 !important;
 }
 
-/* =========================================================
-   FINAL PREMIUM VIDEO FIX
-   ========================================================= */
-
-#premium .gallery > .video-card {
+/* ===== PREMIUM VIDEOS ===== */
+#premium .photo.video-card {
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
@@ -577,10 +536,9 @@ grid-template-columns: repeat(4, 1fr) !important;
   aspect-ratio: auto !important;
   overflow: hidden !important;
   background: #000 !important;
-  align-self: start !important;
 }
 
-#premium .gallery > .video-card video {
+#premium .photo.video-card video {
   display: block !important;
   width: 100% !important;
   height: auto !important;
@@ -591,24 +549,16 @@ grid-template-columns: repeat(4, 1fr) !important;
 }
 
 @media (max-width: 800px) {
-  #premium .gallery > .video-card {
+  #premium .photo.video-card {
     grid-column: 1 / -1 !important;
     width: 100% !important;
     height: auto !important;
-    aspect-ratio: auto !important;
   }
 
-  #premium .gallery > .video-card video {
+  #premium .photo.video-card video {
     width: 100% !important;
     height: auto !important;
-    max-width: 100% !important;
-    max-height: none !important;
     object-fit: contain !important;
   }
 }
 
-@media (max-width: 500px) {
-  #premium .gallery > .video-card {
-    grid-column: 1 / -1 !important;
-  }
-}
