@@ -166,3 +166,32 @@ grid-template-columns: repeat(4, 1fr) !important;
     height: auto !important;
     object-fit: contain !important;
 }
+#premium .gallery {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    grid-auto-flow: row !important;
+    gap: 16px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+}
+
+#premium .gallery .photo {
+    position: relative !important;
+    display: block !important;
+    float: none !important;
+    width: 100% !important;
+    height: auto !important;
+    min-width: 0 !important;
+    margin: 0 !important;
+}
+
+#premium .gallery .photo img {
+    position: relative !important;
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100% !important;
+    object-fit: contain !important;
+    margin: 0 !important;
+}
