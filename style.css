@@ -129,12 +129,15 @@ grid-template-columns: repeat(4, 1fr) !important;
     height: 100%;
 }
 #premium .gallery {
+    display: grid !important;
     grid-template-columns: repeat(3, 1fr) !important;
+    gap: 14px !important;
+    width: 100% !important;
 }
 
 #premium .photo {
-    display: block !important;
-    overflow: visible !important;
+    width: 100% !important;
+    overflow: hidden !important;
 }
 
 #premium .photo img {
