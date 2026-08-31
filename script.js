@@ -14,3 +14,14 @@ function toggleMobileMenu() {
   const nav = document.querySelector('.header nav');
   nav.classList.toggle('mobile-open');
 }
+document.addEventListener("contextmenu", function(e) {
+  if (e.target.tagName === "IMG") {
+    e.preventDefault();
+  }
+});
+
+document.addEventListener("dragstart", function(e) {
+  if (e.target.tagName === "IMG") {
+    e.preventDefault();
+  }
+});
