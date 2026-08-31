@@ -461,3 +461,25 @@ footer{
   .section{padding:55px 5%}
   .points{grid-template-columns:1fr}
 }
+/* PREMIUM GALLERY — FINAL ALIGNMENT */
+#premium .gallery {
+  grid-template-columns: repeat(4, 1fr) !important;
+  grid-auto-flow: row !important;
+  align-items: start !important;
+}
+
+#premium .gallery .photo {
+  width: 100% !important;
+  height: 280px !important;
+  overflow: hidden !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+#premium .gallery .photo img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  display: block !important;
+}
