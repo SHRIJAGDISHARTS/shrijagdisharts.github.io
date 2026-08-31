@@ -494,3 +494,21 @@ footer{
 #premium .gallery .photo img {
   border-radius: 6px !important;
 }
+/* MOBILE VIEW */
+@media (max-width: 700px) {
+  #premium .gallery,
+  #gallery .gallery {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 10px !important;
+  }
+
+  #premium .gallery .photo {
+    height: 180px !important;
+  }
+
+  #premium .gallery .photo img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain !important;
+  }
+}
